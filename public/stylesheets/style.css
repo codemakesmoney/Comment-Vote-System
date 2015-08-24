@@ -1,0 +1,118 @@
+.login {
+    font-style: 80%;
+}
+.header {
+	background-color:black;
+    color:white;
+    text-align:center;
+    padding:0.1%;
+}
+
+.all_comment {
+    float:left;
+    padding:0.1%;
+    width: 100%;
+    background-color:white;
+}
+
+.each_comment_0{
+    float:left;
+    background-color:#f0f0f0;
+    border: 1px solid lightgrey;
+    margin-bottom: 0.5%;
+    padding-bottom: 1.0%;
+    width:100%;
+}
+
+.each_comment_1{
+    float:left;
+    background-color:#ffffff;
+    border: 1px solid lightgrey;
+    margin-bottom: 0.5%;
+    padding-bottom: 1.0%;
+    width:100%;
+}
+
+.each_comment_2{
+    display: none;
+    float:left;
+    background-color:#f0f0f0;
+    border: 1px solid lightgrey;
+    margin-bottom: 0.5%;
+    padding-bottom: 1.0%;
+    width:100%;
+}
+
+.vote{
+    float:left;
+    width:3%;
+    padding: 0.1%;
+    margin-top: 1.2%;
+    font-size: 80%;
+    text-align:center;
+}
+
+.comment_body{
+    float:right;
+    padding:0%;
+    margin-left:0%;
+    width: 95%;
+}
+
+.comment_bottom{
+    font-size:90%;
+}
+.author_date{
+    float:left;
+}
+
+.reply{
+}
+
+a:link {
+    color:#000000;
+    background-color:transparent;
+    text-decoration:none;
+}
+a:visited {
+    color:#000000;
+    background-color:transparent;
+    text-decoration:none;
+}
+a:hover {
+    color:#ff0000;
+    background-color:transparent;
+    text-decoration:underline;
+    cursor: pointer;
+}
+a:active {
+    color:#ff0000;
+    background-color:transparent;
+    text-decoration:underline;
+}
+
+.submit_author_button0{
+    display: block;
+}
+.input_author_area0{
+    display: block;   
+}
+
+.submit_author_button1{
+    display: none;
+}
+.input_author_area1{
+    display: none;   
+}
+
+
+.add_comment0{
+    display: block;
+}
+.add_comment1{
+    display: none;
+}
+
+.add_article{
+
+}

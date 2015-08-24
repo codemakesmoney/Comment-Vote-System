@@ -1,0 +1,44 @@
+doctype html
+html
+	head
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		script(src="https://code.jquery.com/jquery-2.1.3.min.js")
+		script(src = '/javascripts/show_comments.js')
+	body
+		#loginArea.login
+			script.
+				TextNode();
+			button(type = "submit" onclick = "ChangeUser(this)") change 
+			textarea.input_author_area1(placeholder='Input your username here', rows='1', cols='30')
+			button.submit_author_button1(type='submit', onclick = "SubmitUser(this)") submit
+		.header
+			h1 Online Forum
+		#allComment.all_comment
+			.each_comment_2(id="comment.id")
+				.vote
+					a(onclick="Upvote('comment.id', this)")
+						| &#x2227
+					p comment.point  
+					a(onclick="Downvote('comment.id', this)")
+						| &#x2228
+				.comment_body
+					div
+						p comment.content
+						|     
+						.comment_bottom
+							.author_date
+								span|comment.author &nbsp&nbsp&nbsp&nbsp comment.time &nbsp&nbsp&nbsp&nbsp
+							.reply
+								a(onclick='ShowCommentArea(this)') reply
+						.add_comment1
+							textarea(placeholder='Input your comment here.' cols='100' rows='4')
+							br
+							button(onclick="AddComment('comment.id', this)") submit	
+			each comment, i in comments
+				script.
+					ShowComments("#{comment._id}", "#{comment.author}", "#{comment.content}", "#{comment.time}", "#{comment.point}", "#{comment.parentId}");
+		br
+		.add_article
+			textarea(placeholder="Input your article here.", rows = '4', cols='100')
+			br
+			button#btnSubmit(type="submit", onclick = "AddComment('0', this)") submit
